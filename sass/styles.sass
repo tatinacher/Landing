@@ -1,0 +1,658 @@
+$mobile: 320px
+$tablet: 768px
+$desktop: 1024px
+$container: 1280px
+$header: #fff
+$border-search: #9abdde
+$white-text: #fff
+$footer: #e6ecf1
+$placeholder: #969696
+$main-header: #0777ba
+$red-text: #d30531
+$border-bottom: #cedae4
+$header-button: #0777ba
+$button-color: #d30531
+$hover: #e6ecf1
+$shadow: #20496f
+
+body
+    margin: 0
+    font-family: 'PT Sans Caption', sans-serif
+    max-width: 1280px
+    margin: 0 auto
+
+.login_modal_wrapper
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    display: flex
+    align-items: center
+.login_modal_window
+    margin: 0 auto
+    width: 300px
+    height: 250px
+    background: $header
+    .modal_header
+        font-size: 24px
+        text-align: center
+        padding: 0 30px 20px
+    input
+        margin: 10px 20px
+        width: 200px
+        height: 22px
+        display: block
+        margin: 10px auto
+        border: 1px solid $placeholder
+        line-height: normal
+    input::placeholder
+        font-size: 12px
+        line-height: normal
+    button
+        display: block
+        font-size: 16px
+        background: $button-color
+        color: $white-text
+        margin: 0 auto
+        padding: 10px 
+        width: 100px
+.container
+    max-width: 1280px
+    margin: 0 auto
+
+.navbar-default
+    background-color: $header
+.navbar
+    min-height: 67px
+    display: -webkit-flex
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    position: fixed
+    max-width: 1280px
+    width: 100%
+    background: $header
+    top: 0
+    .navbar__login-button
+        font-size: 15px
+        color: $header-button
+        border: 2px solid $header-button
+        background: transparent
+        padding: 4px 22px 9px 22px
+        margin-left: 20px
+    .icon
+        padding-left: 159px
+    .navbar__help-button
+        font-size: 15px
+        color: $header-button
+        padding-right: 4px
+        background: transparent
+        border: none
+        margin-right: 20px
+.help-dropdown
+    position: fixed
+    right: 100px
+    top: 58px
+    background: $header
+    padding: 10px 5px 5px
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2)
+    .help-dropdown__element
+        padding: 10px 58px 16px 14px
+        a
+            color: $header-button
+        &:hover
+            color: $hover
+.dropdown-caret
+    position: absolute
+    top: -10px
+    right: 42px
+    .caret-outer
+        border-bottom: 9px solid #657786
+        border-bottom-color: rgba(0, 0, 0, 0.1)
+        height: auto
+        width: auto
+        position: absolute
+        display: inline-block
+        margin-left: -1px
+        top: 0
+        left: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+    .caret-inner
+        border-bottom: 9px solid #ffffff
+        border-bottom-color: #ffffff
+        position: absolute
+        display: inline-block
+        margin-left: -1px
+        top: 1px
+        left: 1px
+        border-left: 9px solid transparent
+        border-right: 9px solid transparent
+.search-form
+    margin-top: 66px
+    height: 360px
+    display: flex
+    flex-direction: column
+    background-image: url('../img/search.png') 
+    .header
+        font-size: 36px
+        padding: 96px 160px 15px
+        text-shadow: 1px 1px 1px #204a6f, 4px 5px 1em $shadow
+    .search-icon
+        display: none
+    .search-form__input
+        padding: 0 160px
+    input
+        height: 56px
+        border: 0
+        width: 100%
+        box-shadow: inset 2px 2px 2px rgba(117, 117, 117, 0.2)
+        padding-left: 20px 
+        font-size: 18px
+    input::placeholder 
+        color: placeholder
+        font-size: 18px
+        letter-spacing: 0.6px
+        line-height: normal
+    .search-form__button
+        padding: 15px 38px
+        color: $white-text
+        margin-left: 7px
+        font-size: 22px
+        border: 0
+        height: 58px
+        background: $button-color
+        box-shadow: 2px 2px 11px $shadow
+    .search-form__text
+        font-size: 15px
+        color: $white-text
+        padding: 12px 0
+    .input_wrapper
+        display: flex
+        flex-direction: row
+.main
+    margin-top: 40px
+    .list-element__header
+        display: none
+    .element_header
+        font-size: 18px
+        border-bottom: 1px dotted $main-header
+        text-decoration: none
+        color: $main-header
+        margin: 0 20px 7px 13px
+        a
+            text-decoration: none
+            color: $main-header
+    .main__headers
+        padding: 5px 310px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+    .header-text
+        font-size: 18px
+        margin: 0px 16px 0 7px
+    .main__list-element
+        padding: 72px 161px 72px
+        display: flex
+        flex-direction: row
+    .main__list-element.first
+        padding-bottom: 30px
+        
+    .element_text
+        padding-top: 5px
+        padding-bottom: 7px
+        font-size: 15px
+    .element_desktop-header
+        font-size: 24px
+        padding-bottom: 20px
+.header-mobile
+    display: none
+.header-desktop
+    font-size: 36px
+    text-align: center
+    padding: 6px
+    padding-bottom: 15px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .text
+        padding-left: 91px
+    .icon-share-desktop
+        padding-right: 75px
+.list-element__header
+    color: $main-header
+.search-form__header
+    color: $white-text
+    padding-top: 44px
+.list-element__header
+    display: flex
+    align-items: center
+    flex-direction: row
+    padding-left: 25px
+.footer
+    background-color: $footer
+    height: 210px
+
+.red-text
+    padding-top: 33px
+    text-transform: uppercase
+    color: $red-text
+    font-size: 12px
+    font-weight: bold
+    letter-spacing: 2px
+    padding-bottom: 3px
+
+.main
+    .main__list-element
+        border-bottom: 1px solid $border-bottom
+    .main__list-element.first
+        border: none
+    .main__list-element.no-picture
+        padding: 0 500px 63px 161px
+        .element_desktop-header
+            color: $header-button
+            text-decoration: underline
+    .list-element__text
+        padding-right: 40px
+    .main__list-element.reverse
+        flex-direction: row-reverse
+        padding-bottom: 72px
+        .list-element__text
+            padding-left: 51px
+            padding-right: 0px
+    .element_link
+        display: none
+        a
+            color: $header-button
+    .element_desktop-header
+        a
+            color: $header-button
+.partners
+    padding: 56px 134px
+    .partners__header.header
+        font-size: 24px
+        text-align: center
+        padding-bottom: 23px
+        padding-top: 17px
+    .partners__wrapper
+        display: flex
+        flex-direction: row
+    .partner
+        flex-grow: 1
+        flex-basis: 0
+        text-align: center
+        display: flex
+        flex-direction: column
+        .partner__img
+            height: 128px
+            display: flex
+            justify-content: center
+        img
+            align-self: center
+    .partner__description
+        font-size: 12px
+        font-weight: bold
+        padding-top: 6px
+    
+
+
+.footer
+    display: flex
+    flex-direction: row
+    height: 234px
+    .footer__col
+        width: 25%
+        padding: 36px 25px
+    .footer__text
+        padding: 58px 35px
+    .icons
+        position: absolute
+        padding-top: 146px
+        padding-left: 37px
+
+    .footer__links.footer__col.links
+        ul
+            padding-left: 70px
+    ul
+        margin: 0
+        padding: 0
+        li
+            list-style-type: none
+            padding: 7px 0
+            font-size: 15px
+            a
+                color: $header-button
+    .footer__phone
+        font-size: 24px
+        padding-top: 6px
+        a
+            color: $header-button
+            text-decoration: underline
+    .footer__phone-text
+        font-size: 12px
+        padding-bottom: 14px
+    .footer_company
+        font-size: 15px
+        padding-left: 13px
+    .right
+        text-align: right
+    .company
+        padding: 43px 23px
+        img
+            padding-top: 18px
+            padding-right: 9px
+.hidden
+    display: none
+
+.mobile-menu
+    display: none
+.icon-share-mobile
+    display: none
+
+.login-modal__close
+    position: relative
+    right: -90%
+    height: 40px
+    width: 40px
+    color: $header-button
+    &:after
+        position:relative
+        content:"\d7"
+        font-size:30px
+        color:white
+        font-weight:bold
+        top:-53px
+        left:-2px
+        
+@media screen and (min-width: $desktop) and (max-width: $container - 1px)
+    .help-dropdown
+        right: 10px
+
+
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+    .footer 
+        .footer__links.footer__col.links
+            ul
+                padding-left: 0
+    .main 
+        .main__headers
+            padding: 5px 110px
+        .main__list-element
+            padding: 72px 61px 72px
+        .main__list-element.no-picture
+            padding:0 100px 63px 61px
+    .partners
+            padding: 56px 63px
+    .help-dropdown
+        right: 10px
+
+
+@media screen and (min-width: $mobile) and (max-width: $tablet - 1px)
+    .navbar
+        min-height: 40px
+        margin: 0
+        max-width: 360px
+        .icon
+            height: 29px
+            padding-left: 12px
+        
+    .navbar__login-button, .navbar__help-button 
+        display: none
+    .container
+        width: 360px
+        margin-right: auto
+        margin-left: auto
+    .search-form
+        height: 168px
+        background-color: $header
+        border-bottom: 2px solid $border-search
+        display: flex
+        flex-direction: column
+        background-image: url('../img/search.png') 
+        background-repeat: no-repeat
+        background-size: auto 100%
+        background-position: center top
+        padding-top: 44px
+        .search-form__button, .search-form__text
+            display: none
+        .search-form__input
+            padding: 0px 15px 0px 15px
+            .input_wrapper
+                border: none
+                background: $white-text
+                display: flex
+                flex-direction: row
+                align-items: center
+            input
+                height: 47px
+                width: 100%
+                border: none
+                line-height: normal
+                padding-left: 12px 
+        
+
+    .list-element__text
+        display: none
+    .header-desktop
+        display: none
+    
+
+    .red-text
+        padding-bottom: 11px
+    .search-form__header
+        padding-top: 44px
+        padding-bottom: 20px
+    .list-element__header
+        height: 59px
+        padding-left: 25px
+    .element_desktop-header
+        display: none
+    .main__list-element
+        border-bottom: 1px solid $border-bottom
+    .partners
+        padding-top: 3px
+        padding: 0
+        .partner__description
+            font-weight: bold
+            font-size: 12px
+            padding-top: 16px
+        .partners__wrapper
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+        .partners__header.header
+            font-size: 21px
+            padding-top: 32px
+        .partner
+            word-wrap: break-word
+            width: 50%  
+            text-align: center
+            padding-bottom: 30px
+            flex-basis: auto
+            .partner__img
+                height: 105px
+                display: flex
+                justify-content: center
+                align-items: center
+    .footer__text
+        font-size: 13px
+        padding-top: 20px
+    .footer
+        display: flex
+        flex-direction: column
+        padding: 18px 15px 10px 30px
+        text-align: center
+        .footer__text.footer__col.company
+            padding: 0
+            width: 100%
+            display: flex
+            .footer_company
+                font-size: 12px
+        .footer__text.footer__col.company.right
+            text-align: center
+            padding-top: 4px
+        .icons
+            position: inherit
+            padding-top: 14px
+            padding-left: 0
+            text-align: center
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: baseline
+
+    .main__list-element.active
+        .list-element__text
+            display: block
+            -moz-hyphens: auto
+            -webkit-hyphens: auto
+            -ms-hyphens: auto
+            padding: 15px
+            padding-top: 4px
+            font-size: 15px
+            padding-bottom:16px
+    .list-element__img
+        display: none
+    .help-dropdown
+        display: none
+    .main 
+        .main__list-element
+            padding: 0
+    .search-form 
+        margin-top: 40px 
+        .header
+            padding: 0
+            font-size: 21px
+            text-align: center
+            padding-bottom: 20px
+    .search-form__input
+        padding: 0
+        input
+            padding: 0 
+            height: 51px
+            line-height: normal
+            padding-left: 12px
+    .main 
+        margin-top: 0px
+        .main__headers
+            display: none
+        .list-element__header
+            display: flex
+            position: relative
+            &:after         
+                content: ''
+                position: absolute
+                right: 15px
+                width: 0
+                height: 0
+                top: 23px
+                border-top: solid 8px $header-button
+                border-left: solid 4px transparent
+                border-right: solid 4px transparent
+        .element_link
+            display: block
+        .main__list-element
+            flex-direction: column
+        .main__list-element.first
+            border-bottom: 1px solid $border-bottom
+        .header-mobile
+            text-align: center
+            display: block
+            font-size: 21px
+            padding: 30px 30px 8px 30px 
+        .main__list-element.no-picture
+            padding: 0
+            border-bottom: 1px solid $border-bottom
+        .main__list-element.reverse
+            flex-direction: column
+            padding-bottom: 0
+            .list-element__text
+                padding-left: 0
+        .element_text
+            padding-top: 0
+            padding-bottom: 15px
+        .red-text
+            padding-top: 25px
+        .element_header__icon
+            width: 40px
+        .element_header
+            margin:3px 0px 2px 12px
+        .main__list-element.first
+            padding-bottom: 0
+            .element_header
+                margin:13px 20px 7px 18px
+        .element_link
+            a
+                color: $header-button
+    .search-form 
+        .search-icon
+            display: block
+            width: 23px
+            height: 23px
+            padding-right: 9px
+    input::placeholder 
+        font-size: 15px
+        
+        line-height: normal
+    .footer__links
+        display: none
+    .firma-img
+        display: none
+    
+    .mobile-menu-button
+        display: flex
+        flex-direction: column
+        padding-right: 18px
+    .mobile-menu__line
+        width: 19px
+        border-bottom: 3px solid $header-button
+        margin-bottom: 3px
+
+    .mobile-menu 
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        width: 100%
+        height: 100%
+        text-align: center
+        top: 0
+        left: 0
+        margin: 0 auto
+        background: $white-text
+        ul
+            background: #fff
+            width: 100%
+            max-width: 360px
+            top: 5%
+            right: 2%
+            cursor: pointer
+            z-index: 100
+            transition: opacity .25s ease
+            li
+                list-style-type: none
+                padding: 10px
+                a
+                    text-decoration: none
+                    color: $header-button
+            .mobile-menu__close
+                position: relative
+                right: -90%
+                height: 40px
+                width: 40px
+                color: $header-button
+                &:after
+                    position: relative
+                    content: "\d7"
+                    font-size: 30px
+                    color: white
+                    font-weight: bold
+                    top: -53px
+                    left: -2px
+    .mobile-menu.hidden
+        display: none
+    .icon-share-mobile
+        right: 0
+        display: block
